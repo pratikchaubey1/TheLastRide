@@ -145,11 +145,11 @@ function Home() {
         <div className="mt-12 grid grid-cols-3 gap-8 hover:scale-[1.01] px-4 py-6 bg-white/50 dark:bg-zinc-900/50 rounded-2xl backdrop-blur-sm shadow-lg">
           <div className="flex flex-col items-center">
             <span className="text-3xl font-bold text-primary dark:text-white">100+</span>
-            <span className="text-sm text-gray-600 dark:text-gray-200">Stuff</span>
+            <span className="text-sm text-gray-600 dark:text-gray-200">Staff</span>
           </div>
           <div className="flex flex-col items-center">
             <span className="text-3xl font-bold text-primary dark:text-white">4K+</span>
-            <span className="text-sm text-gray-600 dark:text-gray-200">Mambers</span>
+            <span className="text-sm text-gray-600 dark:text-gray-200">Members</span>
           </div>
           <div className="flex flex-col items-center">
             <span className="text-3xl font-bold text-primary dark:text-white">5.0</span>
