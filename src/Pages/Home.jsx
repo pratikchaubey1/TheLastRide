@@ -4,9 +4,16 @@ import { IoEyeSharp } from "react-icons/io5";
 
 function Home() {
   const [isClient, setIsClient] = useState(false);
+ const [views, setViews] = useState(1000);
 
-
- 
+  useEffect(() => {
+    setIsClient(true);
+    fetch("https://api.countapi.xyz/hit/thelastride/home")
+      .then((res) => res.json())
+      .then((data) => {
+        setViews(data.value);
+      });
+  }, []);
   const [text] = useTypewriter({
     words: [
       "Welcome to the last ride",
