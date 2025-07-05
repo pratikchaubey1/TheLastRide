@@ -4,17 +4,9 @@ import { IoEyeSharp } from "react-icons/io5";
 
 function Home() {
   const [isClient, setIsClient] = useState(false);
-  const [views, setViews] = useState(0);
 
-  useEffect(() => {
-    setIsClient(true);
-    fetch("https://api.countapi.xyz/hit/thelastride/home")
-      .then((res) => res.json())
-      .then((data) => {
-        setViews(data.value);
-      });
-  }, []);
 
+ 
   const [text] = useTypewriter({
     words: [
       "Welcome to the last ride",
@@ -108,12 +100,7 @@ function Home() {
       </a>
 
       
-      <div className="absolute top-4 right-4 z-50 bg-white/30 dark:bg-zinc-800/40 px-4 py-2 rounded-full backdrop-blur-md shadow-md flex items-center gap-2">
-        <IoEyeSharp className="text-white text-lg" />
-        <p className="text-sm font-medium text-white">
-          {views.toLocaleString()}
-        </p>
-      </div>
+      
 
       
       <div className="relative mt-20 z-10 flex flex-col items-center justify-center min-h-screen text-white text-center px-4 py-12">
